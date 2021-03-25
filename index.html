@@ -4,24 +4,26 @@
     <title>Todo App</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" charset="utf-8" />
+      rel="stylesheet"/>
+    <link 
+      rel="stylesheet" 
+      href="style.css" 
+      charset="utf-8" />
   </head>
-
   <body>
     <div class="welcome-section">
-      <img class="welcome-section__image" src="./eisenhower-matrix.jpg" />
-      <a
-        class="welcome-section__link"
-        href="https://goal-life.com/page/method/matrix-eisenhower"
-        >Want more details ?
+      <img  class="welcome-section__image" 
+            src="./eisenhower-matrix.jpg"
+            alt="Eisenhower Matrix"
+      />
+      <a  class="welcome-section__link"
+          href="https://goal-life.com/page/method/matrix-eisenhower">
+      Want more details ?
       </a>
     </div>
-
     <div class="task-manager">
       <div class="task-manager__add-section add-section">
-        <h3>
+        <h3 class="add-section__title">
           <label for="new-task">Add Item</label>
         </h3>
         <div class="add-section__row">
@@ -29,9 +31,8 @@
           <button class="add-section__btn">Add</button>
         </div>
       </div>
-
       <div class="task-manager__incomplete-section incomplete">
-        <h3>Todo</h3>
+        <h3 class="incomplete__title">Todo</h3>
         <ul id="incomplete__list">
           <li>
             <input type="checkbox" />
@@ -39,7 +40,7 @@
             <input type="text" />
             <button class="edit">Edit</button>
             <button class="delete">
-              <img src="./remove.svg" />
+              <img src="./remove.svg" alt="remove icon" />
             </button>
           </li>
           <li class="edit-mode">
@@ -48,14 +49,13 @@
             <input type="text" value="Go Shopping" class="task" />
             <button class="edit">Save</button>
             <button class="delete">
-              <img src="./remove.svg" />
+              <img src="./remove.svg" alt="remove icon" />
             </button>
           </li>
         </ul>
       </div>
-
       <div class="task-manager__completed-section completed">
-        <h3>Completed</h3>
+        <h3 class="completed__title"></h3>Completed</h3>
         <ul id="completed__list" class="completed__list">
           <li>
             <input type="checkbox" checked />
@@ -63,13 +63,12 @@
             <input type="text" class="task" />
             <button class="completed__btn edit">Edit</button>
             <button class="completed__btn delete">
-              <img src="./remove.svg" />
+              <img src="./remove.svg" alt="remove icon" />
             </button>
           </li>
         </ul>
       </div>
     </div>
-
     <script src="app.js"></script>
   </body>
 </html>
