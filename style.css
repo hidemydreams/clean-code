@@ -129,16 +129,19 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-.delete:hover {
-  color: #cf2323;
-}
-.delete img {
+
+
+.delete__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.delete__image:hover {
   transform: rotateZ(0);
+}
+
+.delete:hover {
+  color: #cf2323;
 }
 
 /* Completed */
