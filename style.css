@@ -131,17 +131,13 @@ li > input[type="text"] {
 }
 
 
-.delete__image {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete__image:hover {
+.delete img:hover {
   transform: rotateZ(0);
-}
-
-.delete:hover {
-  color: #cf2323;
 }
 
 /* Completed */
